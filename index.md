@@ -1,51 +1,26 @@
 ---
-title: 'Stat 999: Principles and Techniques of Data Science'
+title: 'Stat 151a: Linear Modelling: Theory and Applications'
 subtitle: 'UC Berkeley, Spring 2024'
 ---
-
-<!--div class="staffer">
-  <img class="staffer-image" src="{{ staff_photo }}" height=50 width=50 alt="{{ staff_name }}">
-  <div>
-    <h3 class="staffer-name">
-      <a href="{{ staff_website }}" target="_blank">{{ staff_name }}</a>
-      <p class="staffer-pronouns"><b>{{ staff_pronouns }}</b></p>
-    </h3>
-    <p><a href="mailto:{{ staff_email }}">{{ staff_email }}</a></p>
-    <p><b>Office Hours:</b> {{ staff_oh }}</p>
-  </div>
-</div-->
 
 ::::{grid} 1 2 2 2
 
 :::{card}
-:header: **Ferando Pérez**
+:header: **Ryan Giordano**
 :footer: **Office Hours**: Tue 11-12pm (Evans 419)
 
 ```{list-table}
 :header-rows: 0
 :name: fernando
-* - ![Fernando Perez](images/fernando.jpg)
-  - <p><b>He/Him/His</b></p><p><a href="mailto:fernando.perez@berkeley.edu">fernando.perez@berkeley.edu</a></p><p>
-```
-
-:::
-
-:::{card}
-:header: **Narges Norouzi**
-:footer: **Office Hours**: MW 2-3pm (Evans 337)
-
-```{list-table}
-:header-rows: 0
-:name: narges
-* - ![narges Norouzi](images/narges.jpg)
-  - <p><b>She/Her/Hers</b></p> <p><a href="mailto:norouzi@berkeley.edu">norouzi@berkeley.edu</a></p>
+* - ![Ryan Giordano](images/rgioradno.jpg)
+  - <p><b>He/Him/His</b></p><p><a href="mailto:rgiordano@berkeley.edu">rgiordano@berkeley.edu</a></p><p>
 ```
 
 :::
 
 ::::
 
-:::{attention} Welcome to [Week 2](#week2) of Data 100!
+:::{attention} Welcome to [Week 1](#week2) of Stat 151a!
 :class: dropdown
 :icon: false
 👋

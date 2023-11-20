@@ -1,0 +1,40 @@
+# See docs at: https://mystmd.org/guide/frontmatter
+version: 1
+project:
+  title: 'Stat 999'
+  description: 'Test Class Website Based On Myst'
+  keywords: []
+  authors: ['Not Fernando Perez']
+  github: https://github.com/berkeley-scf/stat999-myst
+  # bibliography: []
+  jupyter:
+    lite: true
+  #thebe:
+  #  lite: true
+    #local:
+    #  url: http://localhost:8888
+    #  token: test-secret
+    #server: true
+    #  url: http://localhost:8888
+    #  token: test-secret
+  plugins:
+    - schedule.mjs
+site:
+  template: book-theme
+  title: 'Stat 999'
+  options:
+    logo: 'stat_bear.png'
+  nav: []
+  actions:
+    - title: Ed
+      url: https://edstem.org
+    - title: DataHub
+      url: https://datahub.berkeley.edu
+    - title: Gradescope
+      url: https://www.gradescope.com/courses/564792
+    - title: Lectures Playlist
+      url: https://youtube.com/playlist?list=PLQCcNQgUcDfr24xMKf9uY3Nclj2gX0CQD&si=OopnvW3jasaYWx6W
+    - title: Extenuating Circumstances
+      url: https://forms.gle/pm7VYsDeCpaBMc9r6
+  domains:
+    - berkeley-scf.github.io

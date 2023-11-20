@@ -12,7 +12,7 @@ subtitle: 'UC Berkeley, Spring 2024'
 ```{list-table}
 :header-rows: 0
 :name: fernando
-* - ![Ryan Giordano](images/rgioradno.jpg)
+* - ![Ryan Giordano](images/rgiordano.jpg)
   - <p><b>He/Him/His</b></p><p><a href="mailto:rgiordano@berkeley.edu">rgiordano@berkeley.edu</a></p><p>
 ```
 

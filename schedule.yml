@@ -1,44 +1,262 @@
-- week: 1
-  days:
-    - date: 'Aug 24'
-      items:
-        - type: 'Lecture'
-          id: '1'
-          name: Introduction
-          href: './test.pdf'
-          auxil:
-            id: 'Note 1'
-            href: './unit1.html'
-        - type: 'Participation'
-          id: '1'
-          name: Lecture Participation 1
-          href: 'https://ds100.org/fa23/lecture/lec01'
-    - date: 'Aug 25'
-      items:
-        - type: 'Lab'
-          id: '1'
-          name: Prerequisite Coding (due Aug 29)
-          href: 'https://ds100.org/fa23/lecture/lec01'
-        - type: 'Homework'
-          id: '1A'
-          name: Plotting and Permutation Test (due Aug 31)
-          href: 'https://ds100.org/fa23/lecture/lec01'
-        - type: 'Homework'
-          id: '1B'
-          name: Prerequisite Math (due Aug 31)
-          href: 'https://ds100.org/fa23/lecture/lec01'
-- week: 2
-  days:
-    - date: 'Aug 29'
-      items:
-        - type: 'Lecture'
-          id: '2'
-          name: Pandas 1
-          href: 'https://ds100.org/fa23/lecture/lec01'
-        - type: 'Participation'
-          id: '2'
-          name: Lecture Participation 2
-          href: 'https://ds100.org/fa23/lecture/lec01'
-          auxil:
-            id: 'Note 2'
-            href: './unit2.html'
+- days:
+  - date: Jan 16
+    items:
+    - href: ./Lectures/Lecture1.md
+      id: 1
+      name: Lecture 1
+      type: Lecture
+  - date: Jan 17
+    items:
+    - href: ./Labs/Lab1.md
+      id: 1
+      name: Lab 1
+      type: Lab
+  - date: Jan 18
+    items:
+    - href: ./Lectures/Lecture2.md
+      id: 2
+      name: Lecture 2
+      type: Lecture
+  week: 1
+- days:
+  - date: Jan 23
+    items:
+    - href: ./Lectures/Lecture3.md
+      id: 3
+      name: Lecture 3
+      type: Lecture
+  - date: Jan 24
+    items:
+    - href: ./Labs/Lab2.md
+      id: 2
+      name: Lab 2
+      type: Lab
+  - date: Jan 25
+    items:
+    - href: ./Lectures/Lecture4.md
+      id: 4
+      name: Lecture 4
+      type: Lecture
+  week: 2
+- days:
+  - date: Jan 30
+    items:
+    - href: ./Lectures/Lecture5.md
+      id: 5
+      name: Lecture 5
+      type: Lecture
+  - date: Jan 31
+    items:
+    - href: ./Labs/Lab3.md
+      id: 3
+      name: Lab 3
+      type: Lab
+  - date: Feb 1
+    items:
+    - href: ./Lectures/Lecture6.md
+      id: 6
+      name: Lecture 6
+      type: Lecture
+  week: 3
+- days:
+  - date: Feb 6
+    items:
+    - href: ./Lectures/Lecture7.md
+      id: 7
+      name: Lecture 7
+      type: Lecture
+  - date: Feb 7
+    items:
+    - href: ./Labs/Lab4.md
+      id: 4
+      name: Lab 4
+      type: Lab
+  - date: Feb 8
+    items:
+    - href: ./Lectures/Lecture8.md
+      id: 8
+      name: Lecture 8
+      type: Lecture
+  week: 4
+- days:
+  - date: Feb 13
+    items:
+    - href: ./Lectures/Lecture9.md
+      id: 9
+      name: Lecture 9
+      type: Lecture
+  - date: Feb 14
+    items:
+    - href: ./Labs/Lab5.md
+      id: 5
+      name: Lab 5
+      type: Lab
+  - date: Feb 15
+    items:
+    - href: ./Lectures/Lecture10.md
+      id: 10
+      name: Lecture 10
+      type: Lecture
+  week: 5
+- days:
+  - date: Feb 20
+    items:
+    - href: ./Lectures/Lecture11.md
+      id: 11
+      name: Lecture 11
+      type: Lecture
+  - date: Feb 21
+    items:
+    - href: ./Labs/Lab6.md
+      id: 6
+      name: Lab 6
+      type: Lab
+  - date: Feb 22
+    items:
+    - href: ./Lectures/Lecture12.md
+      id: 12
+      name: Lecture 12
+      type: Lecture
+  week: 6
+- days:
+  - date: Feb 27
+    items:
+    - href: ./Lectures/Lecture13.md
+      id: 13
+      name: Lecture 13
+      type: Lecture
+  - date: Feb 28
+    items:
+    - href: ./Labs/Lab7.md
+      id: 7
+      name: Lab 7
+      type: Lab
+  - date: Feb 29
+    items:
+    - href: ./Lectures/Lecture14.md
+      id: 14
+      name: Lecture 14
+      type: Lecture
+  week: 7
+- days:
+  - date: Mar 5
+    items:
+    - href: ./Lectures/Lecture15.md
+      id: 15
+      name: Lecture 15
+      type: Lecture
+  - date: Mar 6
+    items:
+    - href: ./Labs/Lab8.md
+      id: 8
+      name: Lab 8
+      type: Lab
+  - date: Mar 7
+    items:
+    - href: ./Lectures/Lecture16.md
+      id: 16
+      name: Lecture 16
+      type: Lecture
+  week: 8
+- days:
+  - date: Mar 12
+    items:
+    - href: ./Lectures/Lecture17.md
+      id: 17
+      name: Lecture 17
+      type: Lecture
+  - date: Mar 13
+    items:
+    - href: ./Labs/Lab9.md
+      id: 9
+      name: Lab 9
+      type: Lab
+  - date: Mar 14
+    items:
+    - href: ./Lectures/Lecture18.md
+      id: 18
+      name: Lecture 18
+      type: Lecture
+  week: 9
+- days:
+  - date: Mar 19
+    items:
+    - href: ./Lectures/Lecture19.md
+      id: 19
+      name: Lecture 19
+      type: Lecture
+  - date: Mar 20
+    items:
+    - href: ./Labs/Lab10.md
+      id: 10
+      name: Lab 10
+      type: Lab
+  - date: Mar 21
+    items:
+    - href: ./Lectures/Lecture20.md
+      id: 20
+      name: Lecture 20
+      type: Lecture
+  week: 10
+- days: []
+  week: 11 (Spring break)
+- days:
+  - date: Apr 2
+    items:
+    - href: ./Lectures/Lecture21.md
+      id: 21
+      name: Lecture 21
+      type: Lecture
+  - date: Apr 3
+    items:
+    - href: ./Labs/Lab11.md
+      id: 11
+      name: Lab 11
+      type: Lab
+  - date: Apr 4
+    items:
+    - href: ./Lectures/Lecture22.md
+      id: 22
+      name: Lecture 22
+      type: Lecture
+  week: 12
+- days:
+  - date: Apr 9
+    items:
+    - href: ./Lectures/Lecture23.md
+      id: 23
+      name: Lecture 23
+      type: Lecture
+  - date: Apr 10
+    items:
+    - href: ./Labs/Lab12.md
+      id: 12
+      name: Lab 12
+      type: Lab
+  - date: Apr 11
+    items:
+    - href: ./Lectures/Lecture24.md
+      id: 24
+      name: Lecture 24
+      type: Lecture
+  week: 13
+- days:
+  - date: Apr 16
+    items:
+    - href: ./Lectures/Lecture25.md
+      id: 25
+      name: Lecture 25
+      type: Lecture
+  - date: Apr 17
+    items:
+    - href: ./Labs/Lab13.md
+      id: 13
+      name: Lab 13
+      type: Lab
+  - date: Apr 18
+    items:
+    - href: ./Lectures/Lecture26.md
+      id: 26
+      name: Lecture 26
+      type: Lecture
+  week: 14

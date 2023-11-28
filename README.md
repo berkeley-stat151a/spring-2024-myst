@@ -1,5 +1,7 @@
 # stat999-myst
 
+# https://stat151a.stat.berkeley.edu/spring-2024/
+
 This repository contains a MyST-based template for class website. You can see a preview of it at [https://berkeley-scf.github.io/stat999-myst](https://berkeley-scf.github.io/stat999-myst). This template is intended to be forked and altered for other courses.
 
 ## Capabilities of this MyST-based Template

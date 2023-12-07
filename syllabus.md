@@ -21,14 +21,44 @@ Jump to:
 (goals)=
 ## Goals
 
-1. Design and conduct regression analyses in R for common data structures and research settings.
-1. Interpret statistical models, estimates of model parameters, and inferences correctly.
-1. Evaluate the quality of a regression analysis and suggest improvements.
-1. Communicate the process and results of a data analysis simply and clearly for a broad audience, using well-organized prose and effective data visualizations.
+To be able to:
+1. Express standard regression analyses both mathematically and in R code
+1. Critically relate the intended use of a regression analysis to its methods and assumptions
+1. Identify common practical and conceptual pitfalls of regression analysis, and to fix the analysis when possible
+1. Communicate the process and results of a regression analysis simply and clearly for a broad audience, using well-organized prose, reproducible code, and effective data visualizations.
+
+
+## Some key concepts
+
+- Modes of inference:
+	- Descriptive statistics / exploratory data analysis
+	- Prediction
+	- Parametric inference
+		- Frequentist inference
+		- Bayesian parametric inference / inverse problems
+
+- Perspectives on linear regression
+	- Linear algebra + projections
+	- ANOVA and one-hot encodings
+	- Maximum likelihood and Bayesian estimators
+	- Empirical loss minimization
+	- Estimating equations
+
+- Common pitfalls of regression
+	- Domain transfer
+	- Gross errors and outliers
+	- Collinearity
+	- Model reification
+	- Model misspecification
+		- Departure from normality
+		- Biased error terms / omitted variables
+		- Heteroskedasticity
+		- Non-invariance under transforms
+
 
 ## Course outline
 - Week 1
-	- Lecture 1: Why linear models?
+	- Lecture 1: Why study linear models?  Class goals and organization.
 	- Lecture 2: Perspectives on the sample mean
 - Week 2
 	- Lecture 3: Simple regression

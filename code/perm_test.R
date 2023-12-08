@@ -8,7 +8,7 @@ SimulateIndep <- function(n, d0, d1, het) {
   x0 <- rnorm(n * d0) %>% matrix(n, d0)
   x1 <- rnorm(n * d1) %>% matrix(n, d1)
   x0[, 1] <- 1
-
+  
   b0 <- rnorm(d0)
   b1 <- rep(0, d1)
   

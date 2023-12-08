@@ -115,22 +115,22 @@ To be able to:
 	- Lecture: How regression fails: Model reification
 	- Lecture: Midterm review
 - Week 9
-	- Lecture: Variable selection: collinearity and shrinkage
-	- Lecture: Variable selection: LASSO and post-selection inference
+	- Lecture: Binary regression for prediction
+	- Lecture: Binary regression for inference
 - Week 10
-	- Lecture: Basis expansions: Bias and variance 
-	- Lecture: Basis expansions: Interpolation and double descent 
+	- Lecture: Bayesian inference: multivariate normal
+	- Lecture: Bayesian inference: regression and shrinkage
 - Week 11:
   - Spring break
 - Week 12
-	- Lecture: Binary regression for prediction
-	- Lecture: Binary regression for inference
+	- Lecture: Variable selection: collinearity and shrinkage
+	- Lecture: Variable selection: LASSO and post-selection inference
 - Week 13
-	- Lecture: Bayesian inference: multivariate normal
-	- Lecture: Bayesian inference: regression and shrinkage
+	- Lecture: Basis expansions: Bias and variance 
+	- Lecture: Basis expansions: Interpolation and double descent 
 - Week 14
-	- Lecture: Optional topics
-	- Lecture: Optional topics
+	- Lecture: Cross-validation
+	- Lecture: Permutation testing
 
 (prerequisites)=
 ## Prerequisites

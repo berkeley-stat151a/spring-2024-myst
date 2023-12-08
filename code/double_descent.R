@@ -1,5 +1,7 @@
 library(tidyverse)
 library(MASS) # for ginv
+library(gridExtra)
+
 
 GetFourierFeature <- function(a) {
   at <- t(as.matrix(a))
@@ -41,20 +43,20 @@ EvalY <- function(x) {
 x_grid <- seq(0, 1, length.out=100)
 y_grid <- EvalY(x_grid)
 if (FALSE) {
-  plot(x_grid, EvalY(x_grid), 'l')
+  plot(x_grid, y_grid, 'l')
 }
 
 
-n_obs <- 40
-x_train <- runif(n_obs)
-x_test <- runif(n_obs)
 
-
-y_train <- EvalY(x_train)
-y_test <- EvalY(x_test)
-
-ComputeCurve <- function(max_nf) {
-  a <- rnorm(max_nf) * a_scale
+ComputeCurve <- function(max_nf, n_obs) {
+  x_train <- runif(n_obs)
+  x_test <- runif(n_obs)
+  
+  y_train <- EvalY(x_train)
+  y_test <- EvalY(x_test)
+  
+  #a <- rnorm(max_nf) * a_scale * 1.5 # In 1d this generates bad features
+  a <- 1:max_nf
   result <- data.frame()
   for (nf in 2:max_nf) {
     GetPhi <- GetFourierFeature(a[1:nf])
@@ -67,8 +69,10 @@ ComputeCurve <- function(max_nf) {
     
     err_train <- mean((y_train_pred - y_train)^2)
     err_test <- mean((y_test_pred - y_test)^2)
+    betahat_l2 <- mean(betahat^2)
     
-    this_result <- data.frame(nf=nf, err_test=err_test, err_train=err_train)
+    this_result <- data.frame(
+      nf=nf, err_test=err_test, err_train=err_train, betahat_l2)
     result <- bind_rows(result, this_result)
   }
   return(result)
@@ -76,20 +80,32 @@ ComputeCurve <- function(max_nf) {
 
 result <- data.frame()
 n_sims <- 50
+n_obs <- 20
 pb <- txtProgressBar(min=0, max=n_sims, style=3)
 for (sim in 1:n_sims) {
   setTxtProgressBar(pb, sim)
   result <- bind_rows(
     result,
-    ComputeCurve(100) %>% mutate(sim=sim)
+    ComputeCurve(max_nf=2 * n_obs, n_obs=n_obs) %>% mutate(sim=sim)
   )
 }
 close(pb)
 
-ggplot(result) +
-  geom_line(aes(x=nf, y=err_train, group=sim, color="train")) +
-  geom_line(aes(x=nf, y=err_test, group=sim, color="test")) +
-  geom_vline(aes(xintercept=n_obs / 2))
+grid.arrange(
+  ggplot(result) +
+    geom_line(aes(x=nf, y=err_test + 1e-3, group=sim, color="test")) +
+    geom_vline(aes(xintercept=n_obs / 2)) +
+    scale_y_log10(),
+  ggplot(result) +
+    geom_line(aes(x=nf, y=err_train + 1e-3, group=sim, color="train")) +
+    geom_vline(aes(xintercept=n_obs / 2)) +
+    scale_y_log10(),
+  ggplot(result) +
+    geom_line(aes(x=nf, y=betahat_l2, group=sim, color="train")) +
+    geom_vline(aes(xintercept=n_obs / 2)) +
+    scale_y_log10(),
+  ncol=3
+)
 
 
 if (FALSE) {

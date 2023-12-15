@@ -8,3 +8,7 @@ dependencies:
   - nodejs>=18.0
   - libwebp==1.3.2
   - mystmd==1.1.31
+  - jupyterlab-tabular-data-editor=1.0.0
+  - jupyterlab=3.6.6
+  - numpy=1.26.2
+  - pandas=2.1.4

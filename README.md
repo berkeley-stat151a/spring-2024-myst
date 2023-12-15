@@ -2,7 +2,7 @@
 
  
 The course website is here https://stat151a.stat.berkeley.edu/spring-2024/
-
+The git repo is here https://github.com/berkeley-stat151a/spring-2024
 
 
 Common commands

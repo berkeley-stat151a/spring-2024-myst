@@ -2,3 +2,5 @@ format: jb-book
 root: index
 chapters:
 - file: syllabus
+- file: Lectures/Lecture1.md
+- file: Lectures/Lecture2.md

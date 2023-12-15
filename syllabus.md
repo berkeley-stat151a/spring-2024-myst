@@ -24,11 +24,11 @@ Jump to:
 To be able to:
 1. Express standard regression analyses both mathematically and in R code
 1. Critically relate the intended use of a regression analysis to its methods and assumptions
-1. Identify common practical and conceptual pitfalls of regression analysis, and to fix the analysis when possible
+1. Identify common practical and conceptual pitfalls of regression analysis, and to improve the analysis when possible
 1. Communicate the process and results of a regression analysis simply and clearly for a broad audience, using well-organized prose, reproducible code, and effective data visualizations.
 
 
-## Some key concepts
+## Some candidate topics
 
 - Modes of inference:
 	- Descriptive statistics / exploratory data analysis
@@ -39,65 +39,111 @@ To be able to:
 
 - Perspectives on linear regression
 	- Linear algebra + projections
-	- ANOVA and one-hot encodings
+		- Inner products
+		- Matrix inverses
+		- Projections and subspaces
 	- Maximum likelihood and Bayesian estimators
 	- Empirical loss minimization
-	- Estimating equations
+	- Special cases and extensions
+		- ANOVA and one-hot encodings
+		- Estimating equations
+		- Nonlinear regression
 
 - Common pitfalls of regression
 	- Domain transfer
 	- Gross errors and outliers
 	- Collinearity
 	- Model reification
+	- Post-selection inference
+	- Multiple testing
 	- Model misspecification
-		- Departure from normality
+		- Misspecified MLE
 		- Biased error terms / omitted variables
 		- Heteroskedasticity
 		- Non-invariance under transforms
 
+- Inferential tools
+	- Bootstrap
+	- Nonparametric asymptotics (sandwich)
+	- Standard statistics and tests (t-test, F-test)
+	- Grouping observations
+	- Conformal prediction
+	- Permutation testing
+
+- Diagnostics
+	- Plotting
+		- QQ plots
+		- Residual plots
+		- Influence scores
+	- Cross-validation and train / test split
+	- Simulation
+
+- Overparameterized methods
+	- L2 regularization
+	- Pseudo-inverse
+	- Lasso
+	- Feature expansions
+		- Double descent
+
+
+- Lecture: Visual diagnostics: residual plots, influence scores
+- Lecture: Train / test splitting and cross-validation
 
 ## Course outline
 - Week 1
-	- Lecture 1: Why study linear models?  Class goals and organization.
-	- Lecture 2: Perspectives on the sample mean
+	- Lecture: Why study linear models?  Class goals and organization.
+	- Lecture: Simple regression as EDA, prediction, and inference
+	- Lab: R basics: loading data, making plots, style best practices
 - Week 2
-	- Lecture 3: Simple regression
-	- Lecture 4: Visualizing and transforming data
+	- Lecture: Linear algebra review: matrix inverses and projections
+	- Lecture: Probability review: consistency, unbiasedness, CLT
+	- Lab: Simulating data
 - Week 3
-	- Lecture 5: Linear algebra review
-	- Lecture 6: Simple regression as projection
+	- Lecture: Multivariate regression as empirical risk minimization.  
+	- Lecture: Train / test split and out of sample error
+	- Lab: Train and test error as number of regressors increases
 - Week 4
-	- Lecture 7: Multivariate regression
-	- Lecture 8: Categorical predictors and one-hot encoding
+	- Lecture: Multivariate regression as maximum likelihood estimation
+	- Lecture: Categorical predictors and one-hot encoding
+	- Lab: Case study with one-hot encoding.
 - Week 5
-	- Lecture 9: Large-sample behavior
-	- Lecture 10: Bootstrapping linear regression
+	- Lecture: Frequentist inference: level, power, testing, and confidence intervals
+	- Lecture: Grouping data in the bootstrap
+	- Lab: Data grouping and coverage
 - Week 6
-	- Lecture 11: Classical inference: T-test
-	- Lecture 12: Classical inference: F-test
+	- Lecture: Asymptotics of empirical risk minimization: sandwich covariance
+	- Lecture: Calibration and conformal inference for prediction
+	- Lab: Case study with prediction
 - Week 7
-	- Lecture 13: Outliers and influence 
-	- Lecture 14: Diagnostics
+	- Lecture: How regression fails: Omitted variables, endogeneity
+	- Lecture: How regression fails: Domain changes, outliers
+	- Lab: Case study with each of these
 - Week 8
-	- Lecture 15: Case studies
-	- Lecture 16: Midterm review
+	- Lecture: How regression fails: Non-independence, small sample sizes
+	- Lecture: Midterm review
+	- Lab: Review
 - Week 9
-	- Lecture 17: Colinearity and shrinkage
-	- Lecture 18: Bayesian inference and shrinkage
+	- Lecture: Binary regression for prediction
+	- Lecture: Binary regression for inference
+	- Lab: Case study
 - Week 10
-	- Lecture 19: Model selection
-	- Lecture 20: LASSO and variable selection
+	- Lecture: Bayesian inference: multivariate normal
+	- Lecture: Bayesian inference: regression and shrinkage
+	- Lab: Case study: heteroskedasticity
 - Week 11:
   - Spring break
 - Week 12
-	- Lecture 21: Binary regression
-	- Lecture 22: Diagnostics for binary regression
+	- Lecture: Variable selection: collinearity and shrinkage
+	- Lecture: Variable selection: LASSO and post-selection inference
+	- Lab: Case study in post-selection inference
 - Week 13
-	- Lecture 23: Generalized linear models
-	- Lecture 24: Inference for generalized linear models
+	- Lecture: Basis expansions: Bias and variance 
+	- Lecture: Basis expansions: Interpolation and double descent 
+	- Lab: Double descent
 - Week 14
-	- Lecture 25: Influence functions for generalized linear models
-	- Lecture 26: Nonparametrics
+	- Lecture: Cross-validation
+	- Lecture: Permutation testing
+	- Lab: CV
 
 (prerequisites)=
 ## Prerequisites

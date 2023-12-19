@@ -3,4 +3,5 @@ root: index
 chapters:
 - file: syllabus
 - file: Lectures/Lecture1.md
-- file: Lectures/Example.md
+- file: Lectures/Lecture2.md
+- file: Lectures/Lecture3.md

@@ -19,6 +19,8 @@ project:
     #  token: test-secret
   plugins:
     - schedule.mjs
+  execute:
+    execute_notebooks: inline
 site:
   template: book-theme
   title: 'Stat 151a'
